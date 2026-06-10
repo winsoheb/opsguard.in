@@ -162,15 +162,8 @@ export default function ContactPage() {
                     onSubmit={handleSubmit} 
                     className="space-y-6"
                     name="contact"
-                    data-netlify="true"
-                    netlify-honeypot="bot-field"
                   >
                     <input type="hidden" name="form-name" value="contact" />
-                    <p className="hidden">
-                      <label>
-                        Don’t fill this out if you're human: <input name="bot-field" />
-                      </label>
-                    </p>
 
                     {errorMsg && (
                       <div className="bg-destructive/15 text-destructive px-4 py-3 rounded-md text-sm font-medium">
