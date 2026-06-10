@@ -34,6 +34,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} min-h-screen bg-background flex flex-col overflow-x-hidden`}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.location.hash.includes("_token=")) {
+                window.location.replace("/admin/" + window.location.hash);
+              }
+            `,
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
