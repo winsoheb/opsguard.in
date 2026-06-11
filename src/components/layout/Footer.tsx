@@ -29,13 +29,15 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/blog" className="hover:text-primary transition-colors">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold mb-4 text-foreground">Connect</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="https://www.linkedin.com/in/opsguard-it-solutions" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Twitter</a></li>
+              <li><a href="https://twitter.com/opsguard" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Twitter</a></li>
             </ul>
           </div>
         </div>

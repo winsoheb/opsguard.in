@@ -27,7 +27,7 @@ export function HeroSection() {
         }}
         className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden"
       >
-        <Image src="/opsguard_logo_transparent.png" alt="" width={800} height={800} className="object-contain scale-150 md:scale-100 opacity-50 dark:opacity-100" priority />
+        <Image src="/opsguard_logo_transparent.png" alt="OpsGuard Background Logo" width={800} height={800} className="object-contain scale-150 md:scale-100 opacity-50 dark:opacity-100" priority fetchPriority="high" />
       </motion.div>
 
       <div className="absolute top-0 right-0 -mr-32 mt-[-10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]" />

@@ -60,6 +60,7 @@ export function Navbar() {
         <button
           className="lg:hidden text-muted-foreground hover:text-foreground ml-4"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Navigation Menu"
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>

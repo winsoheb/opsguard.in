@@ -9,13 +9,22 @@ import { SplashScreen } from "@/components/SplashScreen";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://opsguard.in"),
   title: "OpsGuard | Managed IT Services & Cybersecurity in Pune",
-  description: "Protect. Monitor. Manage. 24x7 Managed IT Services and Cybersecurity Solutions for businesses across India. Expert SOC, server management, and vulnerability tracking.",
+  description: "24x7 Managed IT Services and Cybersecurity Solutions in Pune. Expert SOC, server management, and vulnerability tracking for businesses.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "OpsGuard | Managed IT Services & Cybersecurity",
     description: "24x7 Managed IT Services and Cybersecurity Solutions for businesses.",
     url: "https://opsguard.in",
     siteName: "OpsGuard",
+    images: [
+      {
+        url: "/opsguard_logo_transparent.png",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
@@ -34,6 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} min-h-screen bg-background flex flex-col overflow-x-hidden`}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-background focus:text-foreground z-50">
+          Skip to content
+        </a>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -51,7 +63,7 @@ export default function RootLayout({
         >
           <SplashScreen />
           <Navbar />
-          <main className="flex-1">
+          <main id="main-content" className="flex-1">
             {children}
           </main>
           <Footer />
